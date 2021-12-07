@@ -19,6 +19,14 @@ public:
 
 	~String();
 
+	size_t size() const;
+
+	char* substring(size_t index, size_t count);
+
+	void replace(String substring, String new_substring);
+
+	void insert(String str, size_t offset);
+
 	void changeString(const char* string);
 
 	void resetString();
@@ -28,6 +36,11 @@ public:
 	bool operator==(const String& other) const;
 
 	void print() const;
+
+
+private:
+
+	void setStrongString(char* str);
 
 
 private:

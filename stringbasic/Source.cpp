@@ -22,5 +22,16 @@ int main() {
 
 	newString.print();
 
+	String random("HELLLD");
+	String rest("O WOR");
+	random.insert(rest, 4);
+	random.print();
+
+	String bat("bat");
+	String super("super");
+	String batman("batarang batman crobat");
+	batman.replace(bat, super);
+	batman.print();
+
 	return 0;
 }
