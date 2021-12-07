@@ -2,6 +2,8 @@
 
 #include "Node.h"
 
+
+// Iterator for linked list
 class LinkedListIterator {
 public:
 

@@ -2,6 +2,8 @@
 
 #include "LinkedList.h"
 
+
+// Manages heap allocations
 class AllocationManager {
 
 public:

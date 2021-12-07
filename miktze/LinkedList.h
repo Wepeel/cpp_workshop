@@ -2,7 +2,7 @@
 
 #include "LinkedListIterator.h"
 
-
+// Basic singly linked list
 class LinkedList {
 public:
 
