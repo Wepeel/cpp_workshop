@@ -1,5 +1,3 @@
-#include "BumblebeeSource.h"
-
 #include <iostream>
 
 
@@ -8,7 +6,7 @@ bool is_prime(int number) {
 		return false;
 	}
 
-	for (int i = 2; i < number; ++i) {
+	for (int i = 2; i <= std::sqrt(number); ++i) {
 		if (number % i == 0) {
 			return false;
 		}
@@ -26,14 +24,24 @@ void fill_in_prime_array(int prime_array[], int number_of_primes) {
 }
 
 int main() {
-	int prime_array[ARRAY_SIZE]{ 0 };
-	fill_in_prime_array(prime_array, ARRAY_SIZE);
 
-	for (int i = 0; i < ARRAY_SIZE; ++i) {
+	unsigned array_size = 0;
+	std::cout << "Please enter the amount of primes to print: ";
+	std::cin >> array_size;
+	if (!std::cin) {
+		std::cout << "Error reading number of primes. Was the number positive?" << std::endl;
+	}
+
+	int* prime_array = new int[array_size];
+	fill_in_prime_array(prime_array, array_size);
+
+	for (unsigned i = 0; i < array_size; ++i) {
 		std::cout << prime_array[i] << " ";
 	}
 
 	std::cout << std::endl;
+
+	delete[] prime_array;
 
 	return 0;
 }
