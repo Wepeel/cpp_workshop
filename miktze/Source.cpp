@@ -8,6 +8,9 @@ AllocationManager g_allocationManager;
 
 void* operator new(size_t size) {
 	void* ptr = malloc(size + sizeof(Node));
+	if (ptr == nullptr) {
+		throw std::bad_alloc();
+	}
 	Node* node_ptr = static_cast<Node*>(ptr);
 	node_ptr->size = size;
 	g_allocationManager.addAllocation(node_ptr);
