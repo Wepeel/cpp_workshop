@@ -14,5 +14,13 @@ int main() {
 	helloworld.print();
 	empty.print();
 
+	helloworld.changeString("BYE WORLD");
+	helloworld.print();
+	String newString(helloworld);
+	newString.print();
+	newString.resetString();
+
+	newString.print();
+
 	return 0;
 }

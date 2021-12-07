@@ -1,6 +1,7 @@
 #pragma once
 
 
+// Heap allocated string with RAII
 class String {
 public:
 
@@ -11,6 +12,10 @@ public:
 	String(const String&);
 
 	String& operator=(const String&);
+
+	String(String&&) = default;
+
+	String& operator=(String&&) = default;
 
 	~String();
 
