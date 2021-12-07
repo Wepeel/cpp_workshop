@@ -1,7 +1,5 @@
 #include "LinkedList.h"
 
-LinkedList::LinkedList()
-{}
 
 LinkedList::LinkedList(Node* node) {
 	m_head = node;
@@ -32,7 +30,7 @@ void LinkedList::remove(Node* node) {
 	}
 
 	Node* current = m_head;
-	while (current->next != node && current) {
+	while (current && current->next != node) {
 		current = current->next;
 	}
 
