@@ -10,6 +10,8 @@ public:
 
 	String(const String&);
 
+	String& operator=(const String&);
+
 	~String();
 
 	void changeString(const char* string);
@@ -19,6 +21,8 @@ public:
 	const char* getString() const;
 
 	bool operator==(const String& other) const;
+
+	void print() const;
 
 
 private:

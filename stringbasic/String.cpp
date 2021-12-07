@@ -1,6 +1,7 @@
 #include "String.h"
 
 #include <cstring>
+#include <iostream>
 
 String::String()
 {}
@@ -10,8 +11,18 @@ String::String(const char* string) {
 }
 
 String::String(const String& other) {
-	changeString(other.m_string_ptr);
+	(*this) = other;
 }
+
+String& String::operator=(const String& other) {
+	if (this == &other) {
+		return *this;
+	}
+
+	changeString(other.m_string_ptr);
+	return *this;
+}
+
 
 String::~String() {
 	resetString();
@@ -36,4 +47,12 @@ const char* String::getString() const {
 
 bool String::operator==(const String& other) const {
 	return strcmp(m_string_ptr, other.m_string_ptr) == 0;
+}
+
+void String::print() const {
+	if (m_string_ptr == nullptr) {
+		std::cout << std::endl;
+		return;
+	}
+	std::cout << m_string_ptr << std::endl;
 }
