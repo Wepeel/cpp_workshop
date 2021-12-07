@@ -20,14 +20,14 @@ int main() {
 	try {
 		std::cout << "2 / 0 is " << Calculator::divide(2, 0) << std::endl;
 	}
-	catch (DivisionByZeroException& exception) {
+	catch (const DivisionByZeroException& exception) {
 		std::cout << exception.what() << std::endl;
 	}
 
 	try {
 		std::cout << "2 / 0 is " << Calculator::calculate(2, '/', 0) << std::endl;
 	}
-	catch (DivisionByZeroException& exception) {
+	catch (const DivisionByZeroException& exception) {
 		std::cout << exception.what() << std::endl;
 	}
 

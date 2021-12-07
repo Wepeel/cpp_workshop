@@ -36,6 +36,6 @@ double Calculator::calculate(double first_number, char op, double second_number)
 	case '/':
 		return divide(first_number, second_number);
 	default:
-		throw UnknownOperatorException();
+		throw UnknownOperatorException(op);
 	}
 }

@@ -1,5 +1,7 @@
 #pragma once
 
+
+// Calculator for addition, subtraction, multiplication and division
 class Calculator {
 public:
 	static double add(double first_number, double second_number);
