@@ -5,6 +5,8 @@ VisualStudioVersion = 16.0.30413.136
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "groot", "groot\groot.vcxproj", "{76CE6166-E2BC-41B7-B618-9ADE7D94DBE8}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "fold", "fold\fold.vcxproj", "{9BE0F69A-CC64-4E61-B56C-8F0F1CE16E17}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -21,6 +23,14 @@ Global
 		{76CE6166-E2BC-41B7-B618-9ADE7D94DBE8}.Release|x64.Build.0 = Release|x64
 		{76CE6166-E2BC-41B7-B618-9ADE7D94DBE8}.Release|x86.ActiveCfg = Release|Win32
 		{76CE6166-E2BC-41B7-B618-9ADE7D94DBE8}.Release|x86.Build.0 = Release|Win32
+		{9BE0F69A-CC64-4E61-B56C-8F0F1CE16E17}.Debug|x64.ActiveCfg = Debug|x64
+		{9BE0F69A-CC64-4E61-B56C-8F0F1CE16E17}.Debug|x64.Build.0 = Debug|x64
+		{9BE0F69A-CC64-4E61-B56C-8F0F1CE16E17}.Debug|x86.ActiveCfg = Debug|Win32
+		{9BE0F69A-CC64-4E61-B56C-8F0F1CE16E17}.Debug|x86.Build.0 = Debug|Win32
+		{9BE0F69A-CC64-4E61-B56C-8F0F1CE16E17}.Release|x64.ActiveCfg = Release|x64
+		{9BE0F69A-CC64-4E61-B56C-8F0F1CE16E17}.Release|x64.Build.0 = Release|x64
+		{9BE0F69A-CC64-4E61-B56C-8F0F1CE16E17}.Release|x86.ActiveCfg = Release|Win32
+		{9BE0F69A-CC64-4E61-B56C-8F0F1CE16E17}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{76ce6166-e2bc-41b7-b618-9ade7d94dbe8}</ProjectGuid>
-    <RootNamespace>groot</RootNamespace>
+    <ProjectGuid>{9be0f69a-cc64-4e61-b56c-8f0f1ce16e17}</ProjectGuid>
+    <RootNamespace>fold</RootNamespace>
     <WindowsTargetPlatformVersion>10.0.18362.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
